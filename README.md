@@ -182,8 +182,16 @@ Surefire reports are written to `target/surefire-reports/`.
 
 ## Screenshots
 
-Screenshots are stored in [`docs/screenshots`](docs/screenshots):
+Screenshots are stored in [`docs/screenshots`](docs/screenshots).
 
-- `01-application-startup.png` – application startup
-- `02-api-*.png` – REST API calls
-- `03-test-suite.png` – test suite run
+### Application startup (`mvn spring-boot:run`, dev profile)
+![Application startup](docs/screenshots/01-application-startup.png)
+
+### REST API – CRUD operations
+![CRUD operations](docs/screenshots/02-api-crud.png)
+
+### REST API – validation and error handling
+![Error handling](docs/screenshots/03-api-error-handling.png)
+
+### Test suite (`mvn test`)
+![Test suite](docs/screenshots/04-test-suite.png)
