@@ -1,0 +1,10 @@
+server:
+  port: 8080
+
+leave:
+  max-days-per-request: 45
+  seed-sample-data: true
+
+logging:
+  level:
+    com.rsl.leavemanagement: DEBUG

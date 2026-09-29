@@ -1,0 +1,42 @@
+### Get all leave requests
+GET http://localhost:8080/leaves
+
+### Get a leave request by id
+GET http://localhost:8080/leaves/1
+
+### Create a leave request
+POST http://localhost:8080/leaves
+Content-Type: application/json
+
+{
+  "employeeId": "EMP-100",
+  "leaveType": "SICK",
+  "startDate": "2026-10-12",
+  "endDate": "2026-10-13",
+  "reason": "Flu"
+}
+
+### Update a leave request
+PUT http://localhost:8080/leaves/1
+Content-Type: application/json
+
+{
+  "employeeId": "EMP-001",
+  "leaveType": "CASUAL",
+  "startDate": "2026-10-02",
+  "endDate": "2026-10-03",
+  "reason": "Family function",
+  "status": "APPROVED"
+}
+
+### Delete a leave request
+DELETE http://localhost:8080/leaves/1
+
+### Validation error (missing fields)
+POST http://localhost:8080/leaves
+Content-Type: application/json
+
+{}
+
+### Not found
+GET http://localhost:8080/leaves/999
